@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: pink; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: rgb(162, 103, 123);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 15px;
+            width: 500px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .tep{
+            margin-right: 20px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            background-color: #4CAF50; 
+            color: white;
+            padding: 10px 44.5%;
+            border:none;
+            border-radius: 3px;
+            cursor: pointer;
+            
+
+        }
+
+        a {
+            color: #4CAF50; 
+            text-decoration: none;
+        }
+        .log{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Login</h2>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" class="input" placeholder="abc@email.com" name="email" >
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" class="input" placeholder="password" name="password" >
+
+        <div>
+            <input type="checkbox" id="showPassword">
+            <label for="showPassword">Show Password</label>
+        </div>
+
+        <button type="submit" class="log">login</button>
+
+       
+    </div>
+    <script>
+        if (password === "") {
+                document.getElementById("passwordError").innerHTML = "Password is required.";
+            } else if (password.length < 8) {
+                document.getElementById("passwordError").innerHTML = "Password must be at least 8 characters long.";
+            }
+
+    </script>
+
+</body>
+</html>
